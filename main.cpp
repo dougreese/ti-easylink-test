@@ -1,7 +1,5 @@
 #include <iostream>
-#include <chrono>
 #include <thread>
-#include <stdio.h>
 #include "libusb-1.0/libusb.h"
 
 using namespace std;
@@ -127,7 +125,6 @@ int main()
 			error("Bulk OUT transfer failed.", err);
 		}
 		// cout << "OUT transferred: " << transfer_size << endl;
-		// std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
 	}
 
